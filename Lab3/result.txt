@@ -1,0 +1,122 @@
+anada@ubuntu:~/Desktop/Lab3$ 
+anada@ubuntu:~/Desktop/Lab3$ ls -al
+total 4196
+drwxrwxr-x 2 anada anada    4096 May 19 23:53 .
+drwxr-xr-x 6 anada anada    4096 May 19 20:01 ..
+-rw-rw-r-- 1 anada anada 4264394 May 19 20:06 20190211_070835.jpg
+-rwxrwxrwx 1 anada anada     245 May 19 23:43 gnuplot.sh
+-rw-r--r-- 1 anada anada    5192 May 19 20:01 main.cpp
+-rwxrwxrwx 1 anada anada     204 May 19 20:08 Run-2.sh
+-rwxrwxrwx 1 anada anada     104 May 19 20:07 Run.sh
+anada@ubuntu:~/Desktop/Lab3$ g++ -std=c++14 -pedantic -Wall -Werror -O3 main.cpp
+anada@ubuntu:~/Desktop/Lab3$ 
+anada@ubuntu:~/Desktop/Lab3$ ./Run
+Run-2.sh  Run.sh    
+anada@ubuntu:~/Desktop/Lab3$ ./Run.sh 
+Unix system calls, chunk size 1 elapsed time:
+	 1.941293955 seconds
+	bytes read: 4264394
+C standard library I/O, block size 1 elapsed time:
+	 0.030467987 seconds
+	bytes read: 4264394
+Unix system calls, chunk size 2 elapsed time:
+	 0.991202116 seconds
+	bytes read: 4264394
+C standard library I/O, block size 2 elapsed time:
+	 0.070925951 seconds
+	bytes read: 4264394
+Unix system calls, chunk size 4 elapsed time:
+	 0.463248014 seconds
+	bytes read: 4264394
+C standard library I/O, block size 4 elapsed time:
+	 0.020196915 seconds
+	bytes read: 4264394
+Unix system calls, chunk size 8 elapsed time:
+	 0.249336004 seconds
+	bytes read: 4264394
+C standard library I/O, block size 8 elapsed time:
+	 0.008749962 seconds
+	bytes read: 4264394
+Unix system calls, chunk size 16 elapsed time:
+	 0.145022154 seconds
+	bytes read: 4264394
+C standard library I/O, block size 16 elapsed time:
+	 0.005515814 seconds
+	bytes read: 4264394
+Unix system calls, chunk size 32 elapsed time:
+	 0.081217051 seconds
+	bytes read: 4264394
+C standard library I/O, block size 32 elapsed time:
+	 0.002992153 seconds
+	bytes read: 4264394
+Unix system calls, chunk size 64 elapsed time:
+	 0.062747002 seconds
+	bytes read: 4264394
+C standard library I/O, block size 64 elapsed time:
+	 0.007241011 seconds
+	bytes read: 4264394
+Unix system calls, chunk size 128 elapsed time:
+	 0.026592970 seconds
+	bytes read: 4264394
+C standard library I/O, block size 128 elapsed time:
+	 0.006219149 seconds
+	bytes read: 4264394
+Unix system calls, chunk size 256 elapsed time:
+	 0.012732029 seconds
+	bytes read: 4264394
+C standard library I/O, block size 256 elapsed time:
+	 0.001274109 seconds
+	bytes read: 4264394
+Unix system calls, chunk size 512 elapsed time:
+	 0.009343147 seconds
+	bytes read: 4264394
+C standard library I/O, block size 512 elapsed time:
+	 0.003767967 seconds
+	bytes read: 4264394
+Unix system calls, chunk size 1024 elapsed time:
+	 0.007591963 seconds
+	bytes read: 4264394
+C standard library I/O, block size 1024 elapsed time:
+	 0.005781889 seconds
+	bytes read: 4264394
+Unix system calls, chunk size 2048 elapsed time:
+	 0.005513906 seconds
+	bytes read: 4264394
+C standard library I/O, block size 2048 elapsed time:
+	 0.001523018 seconds
+	bytes read: 4264394
+Unix system calls, chunk size 4096 elapsed time:
+	 0.016373158 seconds
+	bytes read: 4264394
+C standard library I/O, block size 4096 elapsed time:
+	 0.001053095 seconds
+	bytes read: 4264394
+anada@ubuntu:~/Desktop/Lab3$ ./Run-2.sh 
+anada@ubuntu:~/Desktop/Lab3$ ls -al
+total 4220
+drwxrwxr-x 2 anada anada    4096 May 19 23:53 .
+drwxr-xr-x 6 anada anada    4096 May 19 20:01 ..
+-rw-rw-r-- 1 anada anada 4264394 May 19 20:06 20190211_070835.jpg
+-rwxr-xr-x 1 anada anada   18864 May 19 23:53 a.out
+-rw-r--r-- 1 anada anada     408 May 19 23:54 data.dat
+-rwxrwxrwx 1 anada anada     245 May 19 23:43 gnuplot.sh
+-rw-r--r-- 1 anada anada    5192 May 19 20:01 main.cpp
+-rwxrwxrwx 1 anada anada     204 May 19 20:08 Run-2.sh
+-rwxrwxrwx 1 anada anada     104 May 19 20:07 Run.sh
+anada@ubuntu:~/Desktop/Lab3$ cat data.dat 
+1	 1.874867916 	 0.023540974 
+2	 1.041356087 	 0.033924103 
+4	 0.458409071 	 0.017078876 
+8	 0.226166010 	 0.009228945 
+16	 0.150893927 	 0.007344007 
+32	 0.059123039 	 0.002890825 
+64	 0.030143023 	 0.001995087 
+128	 0.016515970 	 0.001559973 
+256	 0.007266045 	 0.001225948 
+512	 0.004030943 	 0.002476931 
+1024	 0.002177000 	 0.001646042 
+2048	 0.001332045 	 0.001369953 
+4096	 0.001131058 	 0.000935078 
+anada@ubuntu:~/Desktop/Lab3$ gnuplot -p gnuplot.sh 
+anada@ubuntu:~/Desktop/Lab3$ 
+
